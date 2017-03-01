@@ -58,7 +58,7 @@
 		    </div>
 		    <div id="ytModal" class="modal fade">
 		        <div class="modal-dialog">
-		            <iframe id="ytVideo" width="960" height="720" src="https://www.youtube.com/embed/F8YfmBKfW0Q?autoplay=1&amp;rel=0" frameborder="0" allowfullscreen></iframe>
+		            <iframe id="ytVideo" width="960" height="720" src="https://www.youtube.com/embed/F8YfmBKfW0Q?" frameborder="0" allowfullscreen></iframe>
 		        </div>
 		    </div>
 		</div>
@@ -237,7 +237,7 @@
 		    /* Assign the initially stored url back to the iframe src
 		    attribute when modal is displayed again */
 		    $("#ytModal").on('show.bs.modal', function(){
-		        $("#ytVideo").attr('src', url);
+		        $("#ytVideo").attr('src', url+"autoplay=1");
 		    });
 		});
 	</script>
